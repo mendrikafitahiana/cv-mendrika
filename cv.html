@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV-Mendrika-Ramilison</title>
+  <style>
+    /* Styles initiaux (conservés) */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px 40px 40px 40px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .header .info {
+      flex: 1;
+    }
+    .header img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #003366;
+      margin-left: 30px;
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .experience, .formation {
+      margin-bottom: 20px;
+    }
+    .title {
+      font-weight: bold;
+    }
+    .subtitle {
+      font-style: italic;
+      color: #666;
+    }
+    .techno {
+      color: #2a5885;
+    }
+    .desc{
+      border-left: 2px solid #003366;
+      padding-left: 1mm;
+      color: #5a5a5a;
+    }
+    .skills-columns {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .skills-columns div {
+      flex: 1;
+      min-width: 200px;
+    }
+    .profile-info {
+      max-width: 70%;
+    }
+    .contact {
+      margin-top: 10px;
+      font-size: 0.9em;
+      line-height: 1;
+    }
+    .contact a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    /* Nouveaux styles pour l'impression en deux colonnes */
+    @media print {
+      body {
+        margin: 0;
+        padding: 5mm;
+        font-size: 9pt;
+        line-height: 1.1;
+        background: white;
+      }
+      
+      .two-column-layout {
+        display: flex;
+        gap: 8mm;
+      }
+      
+      .column {
+        flex: 1;
+        min-width: 0;
+      }
+      
+      .header {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5mm;
+      }
+      
+      .header img {
+        width: 25mm;
+        height: 25mm;
+        margin: 0 auto 3mm auto;
+        border-width: 1px;
+      }
+      
+      .profile-info {
+        max-width: 100%;
+      }
+      
+      h1 {
+        font-size: 12pt;
+        margin: 2mm 0;
+      }
+      
+      h2 {
+        font-size: 10pt;
+        margin: 3mm 0 1mm 0;
+        padding-bottom: 1mm;
+        border-bottom-width: 1px;
+      }
+      
+      .section {
+        margin-bottom: 10mm;
+        page-break-inside: avoid;
+      }
+      
+      ul, ol {
+        padding-left: 5mm;
+        margin: 1mm 0;
+      }
+      
+      li {
+        margin-bottom: 0.5mm;
+      }
+      
+      p, .title, .subtitle, .techno, .desc {
+        margin: 1.5mm 0;
+      }
+      
+      .skills-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2mm;
+      }
+      
+      .skills-columns div {
+        min-width: auto;
+      }
+      
+      .contact p {
+        margin: 0.5mm 0;
+      }
+      
+      a {
+        color: #003366 !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête réorganisé -->
+  <div class="header">
+    <!-- <img src="photo.jpg" alt="Photo de profil"> -->
+    <div class="profile-info">
+      <h1>RAMILISON Solofoniaina Mendrika Fitahiana</h1>
+      <p><strong>Développeur Fullstack & Mobile</strong></p>
+      <div class="contact">
+        <p>LOT AV 878 Vinany Loharanombato, Madagascar</p>
+        <p>+261 34 21 313 65</p>
+        <p><a href="mailto:ramilisonfita24@gmail.com">ramilisonfita24@gmail.com</a></p>
+        <p><a href="https://github.com/mendrikafitahiana" target="_blank">https://github.com/mendrikafitahiana</a></p>
+        <p><a href="https://www.linkedin.com/in/ramilison-mendrika-fitahiana" target="_blank">www.linkedin.com/in/ramilison-mendrika-fitahiana</a></p>
+        <p><a href="https://portfolio-mendrika.netlify.app/" target="_blank">https://portfolio-mendrika.netlify.app/</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenu en deux colonnes -->
+  <div class="two-column-layout">
+    <!-- Colonne de gauche -->
+    <div class="column">
+      <div class="section">
+        <h2>Profil</h2>
+        <p>
+          Développeur Fullstack & Mobile avec plus de 3 ans d'expérience en Symfony, React et Node.js, spécialisé dans la conception d'API REST, les applications web et mobiles et l'intégration d'API tierces.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Compétences</h2>
+        <div class="skills-columns">
+          <div>
+            <strong>Langages & frameworks</strong>
+            <ul>
+              <li>Backend : PHP (Symfony, CodeIgniter), Java (Spring boot), Nodejs/Express</li>
+              <li>Frontend : React, Angular, Ionic</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Bases de données</strong>
+            <ul>
+              <li>SQL : MySQL, PostgreSQL, SQL Server</li>
+              <li>NoSQL : MongoDB</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Outils</strong>
+            <ul>
+              <li>Versionning et collaboration : Git, GitHub, GitLab</li>
+              <li>Test d'API : Postman</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Conteneurisation et devOps</strong>
+            <ul>
+              <li>Docker</li>
+              <li>CI/CD : GitHub Actions, GitLab CI</li>
+              <li>Déploiement : Render, Railway</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Sécurité</strong>
+            <ul>
+              <li>Authentification via JWT</li>
+              <li>Gestion des CORS</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Architecture et organisation</strong>
+            <ul>
+              <li>API RESTful, architecture monolithique, architecture microservices</li>
+              <li>Conception UML / MERISE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Educations</h2>
+        <div class="formation">
+          <p class="title">Master 2 Informatique – MBDS / MIAGE</p>
+          <p class="subtitle">Université Côte d'Azur | Décembre 2023 – Octobre 2024</p>
+          <ul>
+            <li>CI/CD, architecture microservice</li>
+            <li>Optimisation des requêtes et performance des sites (analyse des coûts des requêtes, audit de performance)</li>
+          </ul>
+        </div>
+
+        <div class="formation">
+          <p class="title">Master 1 Informatique – Ingénierie Informatique</p>
+          <p class="subtitle">IT University, Andoharanofotsy | Décembre 2022 – Novembre 2023</p>
+          <ul>
+            <li>Spring boot, .net, Angular, MongoDB</li>
+            <li>Clean Architecture, refactorisation</li>
+          </ul>
+        </div>
+
+        <div class="formation">
+          <p class="title">Bac+3 Informatique – Développement Web</p>
+          <p class="subtitle">IT University, Andoharanofotsy | 2019 – 2022</p>
+          <ul>
+            <li>Bases solides en algorithmique, structures de données, et paradigmes de programmation, architecture monolithique, API REST</li>
+            <li>MySQL, PostgreSQL, SQL Server</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colonne de droite -->
+    <div class="column">
+      <div class="section">
+        <h2>Expériences</h2>
+
+        <div class="experience">
+          <p class="title">Développeur Fullstack – OUTSOURCIA Madagascar</p>
+          <p class="subtitle">Décembre 2025 – Aujourd'hui</p>
+          <p class="techno">Symfony | React | MySQL | Docker | Git | Gitea | WSL</p>
+          <p class="desc">MyOverview Travel – Module Hôtel</p>
+          <ul>
+            <li>Développement d'API REST du module Hôtel (recherche, disponibilités, devis, réservations et annulations)</li>
+            <li>Intégration des API Amadeus et Djoca</li>
+            <li>Gestion des profils voyageurs et des critères hôteliers</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <p class="title">Développeur Fullstack – Wylog Madagascar</p>
+          <p class="subtitle">Décembre 2022 – Décembre 2025</p>
+          <p class="techno">Symfony | React | MySQL | Docker | GitLab CI</p>
+          <p class="desc">Plateforme DevInsider (matchmaking ISV/investisseurs/OEM)</p>
+          <ul>
+            <li>Conception d'API REST sécurisées et développement frontend</li>
+            <li>Implémentation des fonctionnalités clés (recherche, recommandations)</li>
+            <li>Optimisation des performances et mise en place de GitLab CI pour automatiser les tests et déploiements</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <p class="title">Développeur Mobile – Wylog Madagascar</p>
+          <p class="subtitle">Mai 2024 – Novembre 2024</p>
+          <p class="techno">Node.js/Express | Ionic/React | PostgreSQL</p>
+          <p class="desc">Application de réservation VTC</p>
+          <ul>
+            <li>Développement des modules réservation et paiement</li>
+            <li>Intégration géolocalisation temps réel</li>
+            <li>Mise en place CI/CD et déploiement sur Render</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <p class="title">Stagiaire Développeur Fullstack – Wylog Madagascar</p>
+          <p class="subtitle">Juillet 2022 – Octobre 2022</p>
+          <p class="techno">Symfony | React | MySQL</p>
+          <p class="desc">Plateforme interne gestion des congés</p>
+          <ul>
+            <li>Développement du workflow demande/validation congés</li>
+            <li>Système de notifications et gestion des rôles</li>
+            <li>Déploiement sur infrastructure interne</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Langues</h2>
+        <ul>
+            <li>Malagasy : Langue maternelle</li>
+            <li>Français : Courant (niveau avancé)</li>
+            <li>Anglais : Intermédiaire (bonne compréhension écrite, compréhension orale lente)</li>
+            <li>Espagnol : Notions de base</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Intérêts</h2>
+        <div class="formation">
+          <ul>
+            <li>Lecture</li>
+            <li>Basket | Danse | Volley</li>
+            <li>Cheffe d'unité scout Tily Eto Madagasikara</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
