@@ -82,6 +82,32 @@
       text-decoration: none;
     }
 
+    .skill-category {
+      margin-bottom: 10px;
+    }
+
+    .skill-category strong {
+      display: inline-block;
+      margin-bottom: 4px;
+      color: #003366;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      background: #eef4fb;
+      color: #003366;
+      border: 1px solid #d4e3f3;
+      border-radius: 12px;
+      padding: 3px 8px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
     /* Nouveaux styles pour l'impression en deux colonnes */
     @media print {
       body {
@@ -336,24 +362,23 @@
 
       <div class="section">
         <h2>Langues</h2>
-        <ul>
-            <li>Malagasy : Langue maternelle</li>
-            <li>Français : Courant (niveau avancé)</li>
-            <li>Anglais : Intermédiaire (bonne compréhension écrite, compréhension orale lente)</li>
-            <li>Espagnol : Notions de base</li>
-        </ul>
+
+        <div class="tags">
+            <span class="tag"><strong>Malagasy</strong> • Natif</span>
+            <span class="tag"><strong>Français</strong> • Courant</span>
+            <span class="tag"><strong>Anglais</strong> • Intermédiaire</span>
+            <span class="tag"><strong>Espagnol</strong> • Notions</span>
+        </div>
       </div>
 
       <div class="section">
         <h2>Intérêts</h2>
-        <div class="formation">
-          <ul>
-            <li>Lecture</li>
-            <li>Basket | Danse | Volley</li>
-            <li>Cheffe d'unité scout Tily Eto Madagasikara</li>
-          </ul>
+
+        <div class="tags">
+          <p class="techno" style="color: black;">Lecture | Basket | Volley | Danse | Chef d'unité scout</p>
         </div>
       </div>
+
     </div>
   </div>
 </body>
